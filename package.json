@@ -3,9 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cytoscape": "^3.5.0",
+    "cytoscape-cose-bilkent": "^4.0.0",
+    "d3-force": "^2.0.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.0",
+    "prettier": "^1.16.4",
     "react": "^16.8.4",
+    "react-cytoscapejs": "^1.1.0",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-vis": "^1.11.6"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,14 @@
+.candlestick-example {
+  width: 100%;
+}
+
+.rv-xy-canvas {
+  position:absolute;
+}
+.chart {
+    width: 100%;
+  }
+  
+.dashed-example-line {
+  stroke-dasharray: 2, 2;
+}

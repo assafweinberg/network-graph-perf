@@ -1,0 +1,21 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+      "prettier/react"
+    ],
+    "plugins": [
+      "prettier",
+      "react-hooks"
+    ],  
+    "rules": {
+      "prettier/prettier": ["error", {
+        "printWidth": 100,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
+      }],
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    }
+  }
+  
