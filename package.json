@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "cytoscape": "^3.5.0",
+    "cytoscape-cola": "^2.3.0",
     "cytoscape-cose-bilkent": "^4.0.0",
     "d3-force": "^2.0.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -16,7 +17,8 @@
     "react-cytoscapejs": "^1.1.0",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8",
-    "react-vis": "^1.11.6"
+    "react-vis": "^1.11.6",
+    "underscore": "^1.9.1"
   },
   "scripts": {
     "start": "react-scripts start",

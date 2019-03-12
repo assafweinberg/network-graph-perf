@@ -1,26 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import Cytoscape from './cytoscape';
+import Cytoscape from './cytoscape/vanilla';
 import ReactVis from './react-vis';
 
-function showPerf() {
-    performance.mark('render-end');
-    performance.measure('render', 'render-start', 'render-end');
-    var renderTime = performance.getEntriesByName('render')[0].duration;
-    const time = parseFloat(renderTime).toFixed(3);
-    document.getElementById('perf').innerHTML = time;
-    performance.clearMeasures('render');
-}
 class App extends Component {
-    componentDidUpdate() {
-        showPerf();
-    }
-
-    componentDidMount() {
-        showPerf();
-    }
-
-    state = { lib: 'cytoscape', nodeCount: 100, edges: true, renderTime: 0 };
+    state = { lib: 'cytoscape', nodeCount: 1000, edges: true, renderTime: 0 };
 
     selectLibraryHandler = ev => {
         const lib = ev.target.value;
@@ -33,14 +17,13 @@ class App extends Component {
     };
 
     render() {
-        performance.mark('render-start');
         let graph;
         const { nodeCount, edges } = this.state;
         const graphProps = {
             nodeCount,
             edges,
-            width: 1000,
-            height: 500
+            width: window.innerWidth,
+            height: window.innerHeight - 50
         };
         switch (this.state.lib) {
             case 'reactVis':
